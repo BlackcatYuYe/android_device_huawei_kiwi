@@ -15,9 +15,12 @@
 $(call inherit-product, device/huawei/kiwi/full_kiwi.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_kiwi
+# PixelStyle
+$(call inherit-product-if-exists, vendor/pixelstyle/config.mk)
+
+PRODUCT_NAME := aosip_kiwi
 BOARD_VENDOR := huawei
 
 PRODUCT_GMS_CLIENTID_BASE := android-huawei
