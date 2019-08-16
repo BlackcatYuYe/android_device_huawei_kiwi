@@ -131,7 +131,7 @@ PRODUCT_PACKAGES += \
     memtrack.msm8916
 
 # Doze
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
    KiwiDoze
 
 # DRM
@@ -332,3 +332,5 @@ PRODUCT_COPY_FILES += \
 ifneq ($(QCPATH),)
 PRODUCT_BOOT_JARS += WfdCommon
 endif
+PRODUCT_PACKAGES += \
+	Brevent
