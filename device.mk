@@ -149,7 +149,7 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@1.0-service.kiwi
 
 # FlipFlap
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     FlipFlap
 
 # FM
@@ -332,3 +332,5 @@ PRODUCT_COPY_FILES += \
 ifneq ($(QCPATH),)
 PRODUCT_BOOT_JARS += WfdCommon
 endif
+PRODUCT_PACKAGES += \
+	Brevent
